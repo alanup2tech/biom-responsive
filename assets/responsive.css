@@ -1287,64 +1287,12 @@
    TABLET (768px – 1023px)
    ========================================================================== */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  /* ── Header — same as mobile ── */
-  .header__row {
-    padding: 0 !important;
-  }
-
-  .header__columns {
-    display: flex !important;
-    flex-direction: row !important;
-    align-items: center !important;
-    justify-content: space-between !important;
-    padding: 16px 24px !important;
-    --padding-block-start: 0px !important;
-    --padding-block-end: 0px !important;
-  }
-
-  .header__nav-dropdown {
-    display: none !important;
-  }
-
-  .header__menu-btn-text {
-    display: none !important;
-  }
-
-  .search-action--hidden-on-drawer {
-    display: flex !important;
-  }
-
-  .search-action--hidden-on-menu {
-    display: none !important;
-  }
-
-  .header-drawer-icon--close {
-    display: none !important;
-  }
-
-  details[open] .header-drawer-icon--close {
-    display: flex !important;
-  }
-
-  details[open] .header-drawer-icon--open {
-    display: none !important;
-  }
-
-  /* ── Hero ── */
-  .hero {
-    grid-template-columns: 1fr !important;
-  }
-
-  .hero__left {
-    padding: 50px 32px 40px !important;
-  }
-
   .hero__heading {
     font-size: 36px !important;
   }
 
   .hero__right {
-    min-height: 500px !important;
+    min-height: 440px !important;
   }
 
   .hero__model {
@@ -1353,89 +1301,31 @@
   }
 
   .hero__panel-content {
-    width: min(380px, 60%) !important;
-    left: 24px !important;
-    bottom: 24px !important;
+    width: min(320px, 55%) !important;
   }
 
-  /* ── Leanbiom Highlight ── */
-  .leanbiom-highlight__content {
-    grid-template-columns: 1fr !important;
-    min-height: auto !important;
-  }
-
-  .leanbiom-highlight__media {
-    order: 1 !important;
-    min-height: auto !important;
-  }
-
-  .leanbiom-highlight__text {
-    order: 2 !important;
-    padding: 32px !important;
-  }
-
-  /* ── Benefit Cards ── */
   .benefit-cards {
     padding: 60px 0 !important;
   }
 
   .benefit-cards__grid {
     grid-template-columns: repeat(2, 1fr) !important;
-    gap: 16px !important;
   }
 
-  /* ── Featured Products ── */
   .featured-products {
     padding: 60px 0 !important;
   }
 
-  /* ── Why Biom ── */
   .why-biom {
     padding: 60px 0 !important;
   }
 
   .why-biom__compare {
-    grid-template-columns: 1fr !important;
-    gap: 24px !important;
-    justify-items: center !important;
-  }
-
-  .why-biom__visual {
-    order: 0 !important;
-    width: 50vw !important;
-    max-width: 400px !important;
-    aspect-ratio: 1 !important;
-    display: flex !important;
-    flex-direction: row !important;
-    gap: 0 !important;
-    border-radius: 50% !important;
-    overflow: hidden !important;
-    margin: 0 auto !important;
-  }
-
-  .why-biom__visual::after {
-    display: none !important;
-  }
-
-  .probiotics_wrap,
-  .biom-probiotics_wrap {
-    width: 50% !important;
-    height: 100% !important;
-    border-radius: 0 !important;
-    overflow: hidden !important;
-  }
-
-  .probiotics_wrap img,
-  .biom-probiotics_wrap img {
-    width: 100% !important;
-    height: 100% !important;
-    object-fit: cover !important;
-    border-radius: 0 !important;
+    gap: 16px !important;
   }
 
   .why-biom-card {
     max-width: 100% !important;
-    width: 100% !important;
   }
 
   .why-biom-card--left:before,
@@ -1445,108 +1335,12 @@
     display: none !important;
   }
 
-  /* ── Science Split ── */
-  .science-split {
-    grid-template-columns: 1fr !important;
-    min-height: auto !important;
-  }
-
-  .science-split__media {
-    min-height: 400px !important;
-    position: relative !important;
-    order: 2 !important;
-  }
-
-  .science-split__media > img {
-    position: absolute !important;
-    inset: 0 !important;
-    width: 100% !important;
-    height: 100% !important;
-    object-fit: cover !important;
-    object-position: center top !important;
-  }
-
   .science-split__content {
     padding: 48px 32px !important;
-    order: 1 !important;
   }
 
-  /* ── Testimonials ── */
   .testimonials {
     padding: 60px 0 !important;
-  }
-
-  .testimonial-card {
-    height: 420px !important;
-  }
-
-  /* ── Image Banner ── */
-  .image-banner {
-    min-height: auto !important;
-    display: block !important;
-    position: relative !important;
-    overflow: hidden !important;
-    background: transparent !important;
-  }
-
-  .image-banner__title {
-    position: absolute !important;
-    top: 24px !important;
-    left: 24px !important;
-    right: 24px !important;
-    bottom: auto !important;
-    font-size: 32px !important;
-    z-index: 10 !important;
-    pointer-events: none !important;
-    mix-blend-mode: overlay !important;
-    color: #f5f5f5 !important;
-  }
-
-  .image-banner-swiper .swiper-slide {
-    min-height: 600px !important;
-    position: relative !important;
-    padding: 90px 24px 40px !important;
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: flex-start !important;
-  }
-
-  .image-banner-swiper .image-banner__bg,
-  .image-banner__bg {
-    position: absolute !important;
-    inset: 0 !important;
-    width: 100% !important;
-    height: 100% !important;
-    object-fit: cover !important;
-  }
-
-  .image-banner__card {
-    position: relative !important;
-    z-index: 2 !important;
-  }
-
-  .image-banner__card--product {
-    left: auto !important;
-    top: auto !important;
-    margin: 0 0 20px !important;
-    width: fit-content !important;
-  }
-
-  .image-banner__card--text {
-    right: auto !important;
-    top: auto !important;
-    margin: 0 !important;
-    width: 60% !important;
-    text-align: center !important;
-  }
-
-  .image-banner__glow {
-    display: none !important;
-  }
-
-  /* ── Ecosystem CTA ── */
-  .ecosystem-cta {
-    min-height: auto !important;
   }
 
   .ecosystem-cta__heading {
@@ -1555,166 +1349,6 @@
 
   .ecosystem-cta__media {
     width: 40% !important;
-  }
-
-  .ecosystem-cta__content {
-    max-width: 55% !important;
-    padding: 40px 24px !important;
-  }
-
-  /* ── CTA Band ── */
-  .cta-band {
-    padding: 50px 24px !important;
-  }
-
-  /* ── Footer ── */
-  .footer-content {
-    grid-template-columns: 1fr !important;
-    gap: 16px !important;
-  }
-
-  /* ── Footer Utilities ── */
-  .footer-utilities .utilities {
-    display: flex !important;
-    flex-direction: column !important;
-    text-align: center !important;
-  }
-
-  .footer-utilities .utilities > * {
-    text-align: center !important;
-    max-width: 100% !important;
-  }
-}
-
-/* ==========================================================================
-   LAPTOP (1024px – 1439px)
-   ========================================================================== */
-@media screen and (min-width: 1024px) and (max-width: 1439px) {
-  /* Hero */
-  .hero__heading {
-    font-size: 48px !important;
-  }
-
-  .hero__panel-content {
-    width: min(340px, 50%) !important;
-  }
-
-  /* Benefit Cards — 2 cols until 1280px */
-  .benefit-cards__grid {
-    grid-template-columns: repeat(2, 1fr) !important;
-  }
-
-  .benefit-cards {
-    padding: 80px 0 !important;
-  }
-
-  /* Why Biom — tighter gap */
-  .why-biom__compare {
-    gap: 24px !important;
-  }
-
-  .why-biom-card {
-    max-width: 320px !important;
-  }
-
-  /* Science Split */
-  .science-split__content {
-    padding: 80px 60px !important;
-  }
-
-  /* Testimonials */
-  .testimonials {
-    padding: 80px 0 !important;
-  }
-
-  /* Image Banner */
-  .image-banner__card--text {
-    width: min(600px, 45%) !important;
-  }
-
-  /* Ecosystem CTA */
-  .ecosystem-cta__heading {
-    font-size: 36px !important;
-  }
-
-  .ecosystem-cta__media {
-    width: 42% !important;
-  }
-
-  /* Featured Products */
-  .featured-products {
-    padding: 80px 0 !important;
-  }
-}
-
-/* ==========================================================================
-   DESKTOP (1440px+)
-   ========================================================================== */
-@media screen and (min-width: 1440px) {
-  /* Max-width constraints for readability */
-  .benefit-cards__intro,
-  .why-biom__intro,
-  .cta-band__heading,
-  .cta-band__text {
-    max-width: 900px !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
-  }
-
-  .why-biom__compare {
-    max-width: 1320px !important;
-    margin: 0 auto !important;
-  }
-
-  .science-split__content {
-    padding: 120px 85px !important;
-  }
-
-  .ecosystem-cta__content {
-    max-width: 800px !important;
-  }
-}
-
-/* ==========================================================================
-   ULTRA-WIDE (1920px+)
-   ========================================================================== */
-@media screen and (min-width: 1920px) {
-  /* Cap content width to prevent excessive stretching */
-  .hero__left {
-    max-width: 960px !important;
-  }
-
-  .benefit-cards__grid {
-    max-width: 1400px !important;
-    margin: 0 auto !important;
-  }
-
-  .featured-products .page-width {
-    max-width: 1400px !important;
-  }
-
-  .why-biom__compare {
-    max-width: 1400px !important;
-  }
-
-  .science-split {
-    max-width: 1920px !important;
-    margin: 0 auto !important;
-  }
-
-  .ecosystem-cta {
-    max-width: 1920px !important;
-    margin: 0 auto !important;
-  }
-
-  .image-banner {
-    max-width: 1920px !important;
-    margin: 0 auto !important;
-  }
-
-  .testimonials {
-    max-width: 1920px !important;
-    margin: 0 auto !important;
   }
 }
 
